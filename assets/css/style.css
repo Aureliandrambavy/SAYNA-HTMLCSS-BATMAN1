@@ -1,0 +1,382 @@
+@import url('https://fonts.googleapis.com/css?family=Rajdhani');
+@import url('https://fonts.googleapis.com/css?family=Space Grotesk');
+
+
+:root{
+    --yellow-color: #FFFF00;
+    --yellow-light: #F8F184;
+    --blue-color: #19587D;
+    --white-color: #FFF;
+    --gradient-white: #eddebfc8;
+    --gradient-red: #8900096b;
+    --black-color: #000;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1{
+    font-family: 'rajdhani';
+    font-size: 36px;
+    font-weight: 400;
+}
+button{
+    font-family: 'rajdhani';
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.container{
+    width: 80%;
+    margin: 0 auto;
+}
+
+body{
+    background-color: black;
+    color: white;
+    font-family: 'Space-Grotesk';
+    font-weight: 300;
+    opacity: 0.4; 
+}
+
+.up-bar{
+    border-top: #727272 2px solid;
+    position: relative;
+    top: 132px;
+    width: 85%;
+    left: 102px;
+}
+
+/* Design de la navigation */
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 0;   
+}
+
+ul{
+    list-style: none;
+
+}
+
+nav ul a{
+    color: var(--white-color);
+    font-size: 25px;
+    font-weight: 500;
+    font-family: 'rajdhani';  
+} 
+
+nav ul a:hover{
+    color: var(--yellow-color);
+}
+
+.logo:hover{
+    -webkit-filter: invert(4%) sepia(98%) saturate(6486%) hue-rotate(356deg) brightness(100%) contrast(107%);
+    filter: invert(4%) sepia(98%) saturate(6486%) hue-rotate(356deg) brightness(100%) contrast(107%);
+    color: var(--yellow-color);
+}
+
+/* Design de la partie en-tête du hero */
+
+#hero {
+    background-image:url(../Illustrations/Bathome1.png);
+    background-size: cover;
+    height: 600px;
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-color: #19587D;
+}
+
+.content{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    width: 60%;
+    margin: 0 auto;
+    padding-top: 150px;
+}
+
+.btn{
+    text-decoration: none;
+    color: var(--white-color);
+    font-family: 'rajdhani';
+    font-size: 22px;
+    padding: 15px 20px;
+    margin-top: 10px;
+    line-height: 5;
+    background: linear-gradient(
+        80deg, var(--gradient-white), var(--gradient-red)
+    );
+    box-shadow: var(--black-color) 5px 5px 60px;
+}
+
+.cta a:hover{
+    background-size: 100%;
+    background-color: white;
+}
+
+#hero .titre{
+    margin: 20px 0;
+
+}
+
+#hero .fleche{
+    display: block;
+    margin: 0 auto;
+    margin-top: 245px;
+}
+
+.scroll {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    right: 80px;
+    top: 230px;
+}
+
+.scroll .social{
+    margin-top: 15px;
+}
+
+/* Design de la section batman personnage */
+
+#batman-cinema, #batman-justice-league{
+    margin-top: 40px;
+}
+
+.batman-personnage{
+    display: flex;
+    justify-content: space-between;
+}
+
+#batman-cinema .titre{
+    text-transform: uppercase;
+    font-weight: bold;
+    margin: 30px 0;
+}
+
+#batman-cinema .description, #batman-justice-league .description{
+    margin-bottom: 40px;
+    text-align: justify;
+    width: 80%;
+}
+
+#batman-cinema .personnage-info{
+    text-align: center;
+}
+
+
+/* Design de la partie multimedia */
+
+#multimedia button{
+    position: relative;
+    top: 155px;
+    background: none;
+}
+
+#multimedia .right{
+    right: -85%;
+}
+
+#multimedia .slider-multimedia{
+    display: flex;
+    width: 60%;
+    margin: 40px auto;
+}
+
+#multimedia .slider-image{
+    width: 100%;
+}
+
+#multimedia .slider-content{
+    padding: 15px;
+    background-color: #727272;
+    border-radius: 0 20px 20px 0;
+}
+
+#multimedia p{
+    font-size: 14px;
+}
+
+#multimedia .yellow{
+    color: var(--yellow-color);
+}
+
+/* Design de la partie Contact - Formulaire */
+
+#contact{
+    background-color: darkslategray;
+    padding: 70px 0;
+}
+
+#contact .form{
+    width: 50%;
+    margin: 0 auto;
+}
+
+#contact h2{
+    text-align: center;
+    font-size: 32px;
+    font-family: 'rajdhani';
+    margin-bottom: 32px;
+}
+
+#contact .titre{
+    color: #FFF;
+    font-family: 'rajdhani';
+    font-size: 20px;
+    display: block;
+    margin: 28px 0;
+}
+
+#contact .form input[type='email']{
+    display: block;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    width: 80%;
+    border-bottom: 2px solid rgba(120, 120, 120);
+    background-color: transparent;
+    padding: 10px 0;
+}
+
+.contact-texte{
+    display: inline;
+    margin-top: 25px;
+}
+
+.option{
+    width: 100%;
+}
+
+#contact .news{
+    margin-top: 25px;
+    border-bottom: 2px solid rgba(120, 120, 120);
+}
+
+#contact .icon img{
+    transform: rotate(90deg);
+    width: 20px;
+}
+
+::-webkit-input-placeholder{
+    color: rgb(202, 198, 198);
+    font-size: 15px;
+}
+
+::-moz-placeholder{
+    color: rgba(120, 120, 120);
+    font-size: 15px;
+}
+
+::-ms-input-placeholder{
+    color: rgba(120, 120, 120);
+    font-size: 15px;
+}
+
+::placeholder{
+    color: rgb(230, 226, 226);
+    font-size: 15px;
+}
+
+.btn-group{
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.form input[type='radio']{
+    opacity: 0;
+}
+
+.btn-group label{
+   cursor: pointer;
+   border: 2px solid; 
+   border-color: #19587D;
+   padding: 10px;
+   -o-border-image: linear-gradient(
+    69deg, white, rgb(0, 98, 255)) 1;
+   border-image: linear-gradient(
+    69deg, white, rgb(0, 98, 255)
+   ) 1;
+
+   font-size: 20px;
+}
+
+#commentaire{
+    color: rgb(213, 208, 208);
+    font-size: 15px;
+    
+}
+
+textarea{
+    height: 20px;
+    width: 100%;
+    padding-left: 3px;
+    color: #FFF;
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid rgba(120, 120, 120);
+}
+
+input[type='submit']{
+    color: white;
+    display: block;
+    font-size: 25px;
+    font-family: 'rajdhani';
+    width: 230px;
+    margin: 25px auto;
+    padding: 10px;
+    background: linear-gradient(
+        80deg, white, red
+    );
+}
+
+/* Design de la citation */
+
+#citations{
+    margin: 90px;
+}
+
+#citations .citation-carte{
+    text-align: center;
+    width: 50%;
+    margin: 0 auto;
+}
+
+#citations .citation-auteur{
+    padding-top: 30px;
+    font-size: 15px;
+    font-family: 'rajdhani';
+}
+
+#citations .guillemet-close{
+    float: right;
+}
+
+/* Design du footer */
+
+footer{
+    margin-top: 162px;
+}
+
+footer .text-footer{
+    text-align: center;
+    font-size: 14px;
+}
+
+footer .social-footer{
+    text-align: center;
+    margin: 50px 0;
+}
+
+footer .social-item{
+    padding: 20px;
+}
